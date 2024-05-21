@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="script.js"></script>
+</head>
+<body>
+
+<!-- Oppgave 2.-------------------------------------------- -->
+<h1>Ny bestilling</h1>
+<table>
+  <tr>
+    <td>Navn</td>
+    <td><input type="text" id="navn" onchange="validerNavn()"></td>
+    <td><span id="feilNavn" style="color: red"></span></td>
+  </tr>
+  <tr>
+    <td>Mobil</td>
+    <td><input type="number" id="mobil" onchange="validerMobil()"></td>
+    <td><span id="feilMobil" style="color: red"></span></td>
+  </tr>
+  <tr>
+    <td>Epost</td>
+    <td><input type="text" id="epost" onchange="validerEpost()"></td>
+    <td><span id="feilEpost" style="color: red"></span></td>
+  </tr>
+  <tr>
+    <td>Bord</td>
+    <td><input type="number" id="bord" onchange="validerBord()"></td>
+    <td><span id="feilBord" style="color: red"></span></td>
+  </tr>
+  <tr>
+    <td>Varer</td>
+    <td><input type="text" id="Varer" onchange="validerVarer()"></td>
+    <td><span id="feilVarer" style="color: red"></span></td>
+  </tr>
+</table>
+<button id="bestillingsKnapp" onclick="sendBestilling()">Send bestilling</button>
+<div id="melding"></div>
+</body>
+</html>
